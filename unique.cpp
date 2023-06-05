@@ -33,8 +33,10 @@ bool unique_chars(string s){
 }
 
 int main(int argc, char *argv[]) {
-	if (argc == 2){
-		string s = string(argv[1]);
+	string s;
+	if (argc == 1){
+		cout << "Enter a lowercase string";
+		cin >> s;
 			if(!is_lowercase(s)){
 				 cout << "Error: String must contain only lowercase letters." << endl;
 			} else {
